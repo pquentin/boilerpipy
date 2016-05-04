@@ -127,7 +127,7 @@ class Extractor:
 
         except:
             logger.info('unexpected error: %s' % sys.exc_info()[0])
-            return None
+            raise
 
     def get_article(self, nodes, best_node):
         # Now that we have the top node, look through its siblings for content that might also be related.
